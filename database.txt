@@ -1,0 +1,13 @@
+CREATE DATABASE users; # to create a new database
+
+USE users; # to start work with database
+
+# Student Table
+CREATE TABLE users_info( 
+id INT AUTO_INCREMENT,
+username VARCHAR(100) NOT NULL UNIQUE,
+email VARCHAR(100) NOT NULL UNIQUE,
+password VARCHAR(50) NOT NULL,
+PRIMARY KEY (id)
+);
+
